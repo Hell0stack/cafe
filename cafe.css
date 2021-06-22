@@ -1,0 +1,156 @@
+img{
+    width: 500px;
+}
+
+/*------------------------------------------header------------------------------------------*/
+.header{
+    background-color: rgb(124, 218, 223);
+    height: 90px; /*background-colorの長さ調整*/
+}
+
+.header-logo {
+    font-size: 30px;
+    padding: 30px; /*上下左右に20pxの余白を追加*/
+    /*padding: 20px 10px 20px 10px; /*上 右 下 左でそれぞれ指定*/
+    /*padding: 20px 10px; /*上下 右左でそれぞれ指定*/
+    /*padding-top: px; /*ある特定の方向ののみに余白を追加*/
+    color: white;
+}
+
+
+.header-list li{ /*header-listのliのみに設定をすることも可能*/
+    position: relative; /*リストの位置調整*/
+    top: -80px; left: 500px;
+    list-style: none; /*黒点を無くす*/
+    /*    float: left;*/
+    padding: 0px 15px;
+}
+
+.header-list{    
+    color: white;
+}
+
+ul{
+    display: flex; /*これでも横並びになる floatよりもこっちがトレンド*/
+}
+
+
+.follow-me {
+    list-style: none;
+    margin: 0 0 -8px;
+    overflow: hidden;
+    padding: 0;
+  }
+  .follow-me li {
+    float: left;
+    margin: 0 8px 8px 0;
+    position: absolute;
+    top: -10px;
+    z-index: 1;
+  }
+
+  .follow-me li a::before {
+    color: rgba(255, 255, 255, 0.534);
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 16px; /*アイコンのサイズ*/
+    line-height: 10px; /*ボタンの高さ*/
+    width: 44px; /* Button width */
+  }
+  .follow-me li a:hover::before {
+    color: rgba(206, 206, 206, 0.534); /*アイコンの色*/
+  }
+  .follow-me li a[href*="instagram.com"]::before      { content: "\f16d"; }
+  .follow-me li a[href*="twitter.com"]::before        { content: "\f099"; }
+
+/*------------------------------------------main------------------------------------------*/
+
+.main{
+    background-color: rgb(181, 220, 221);
+    height: 1300px;
+}
+
+h1{
+    font-size: 60px;
+    margin-bottom: 20px; /*20px以下は変わらないかも*/
+}
+
+.contents-title{
+    margin-top: 100px; /*外側の余白を決める paddingは内側の余白を決める 書き方はpadding同様*/
+    margin-bottom: 20px;
+    border-bottom: 3px solid rgb(133, 132, 132); /*枠線を付ける（太さ 種類 色）borderのみだったら、上下左右に枠線がつく*/
+}
+
+.contents-item{
+    float: left;
+}
+
+.contents-item img{
+    width: 400px;
+}
+
+span{
+    color:rgb(245, 12, 12);
+}
+
+.contact-form{
+    padding-top: 300px;
+}
+
+.section-title{
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgb(133, 132, 132);
+}
+
+/*複数のものに対して適応可能*/
+input, textarea{
+    width: 400px; /*幅*/
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px; /*枠が拡大される感じ、内側の余白を増やすってことだからそうなのか*/
+    font-size: 18px; /*高さ*/
+    border: 1px solid #dee7ec;
+}
+
+.contact-submit{
+    background-color: rgb(166, 222, 240);
+}
+
+/*------------------------------------------footer------------------------------------------*/
+.footer{
+    background-color: rgb(205, 143, 218);
+    height: 120px;
+    padding: 40px;
+}
+
+.footer-logo{
+    font-size: 32px;
+    float: left;
+    color: white;
+}
+
+.footer-list{
+    float:right; /*liに対して行ってしまうと横並びになってしまう*/
+    color: white;
+}
+
+.footer-list li{
+    list-style: none; /*黒点を無くす*/
+    padding: 10px 10px;
+    /*padding-bottom: 30px;*/ /*下のみに間隔を空ける*/
+}
+
+/*
+.selected { /*クラス名には.を付ける
+ color: red; 
+}
+
+h1{
+    color:blue;
+    font-size:60px;
+    font-family:Century; /*スペースがあるフォントは "" で囲む
+    background-color:brown;
+    width: 500px;
+    height: 80px;
+}
+*/
